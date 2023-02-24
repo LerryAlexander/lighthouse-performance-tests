@@ -1,0 +1,23 @@
+{
+  "name": "ui-performance-tests",
+  "version": "1.0.0",
+  "description": "Performance tests with Lighthouse",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "DEBUG=$npm_config_DEBUG THRESHOLDS=$npm_config_THRESHOLDS TESTENV=$npm_config_TESTENV jest"
+  },
+  "author": "Team Witcher",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "lighthouse": "^9.6.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "jest-puppeteer": "^6.1.0",
+    "puppeteer": "^14.3.0"
+  }
+}
